@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "RN GRADIANT",
-    "slug": "rn-prac-grad",
+    "name": "Nav App",
+    "slug": "nav-app",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [
