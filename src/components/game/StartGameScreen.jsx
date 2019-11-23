@@ -9,7 +9,7 @@ import {
   Alert
 } from "react-native";
 import Card from "../common/Card";
-import Colors from "../constants/colors";
+import Colors from "../utils/colors";
 import Input from "../common/Input";
 import NumberContainer from "../common/NumberContainer";
 import Body from "../Body";
