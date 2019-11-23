@@ -7,6 +7,7 @@ import Home from "./menus/Home";
 import Settings from "./menus/Settings";
 import About from "./menus/About";
 import Goal from "./menus/Goal";
+import Game from "./menus/Game";
 
 const MainNavigator = createDrawerNavigator(
   {
@@ -27,6 +28,15 @@ const MainNavigator = createDrawerNavigator(
         drawerLabel: "Goal"
       },
       screen: Goal
+    },
+    Game: {
+      navigationOptions: {
+        drawerIcon: ({ tintColor }) => (
+          <Ionicons name="md-play" style={{ color: tintColor }} />
+        ),
+        drawerLabel: "Game"
+      },
+      screen: Game
     },
     Settings: {
       navigationOptions: {
