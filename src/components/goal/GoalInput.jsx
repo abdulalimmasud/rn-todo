@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
     width: 250,
     borderWidth: 1,
     padding: 10,
+    height: 40,
     marginBottom: 10
   },
   buttonContainer: {
