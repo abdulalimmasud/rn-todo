@@ -1,21 +1,19 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import { DrawerItems } from "react-navigation-drawer";
+import Body from "./Body";
 
 const CustomDrawerNavigator = props => (
-  <View style={styles.container}>
+  <Body>
     <DrawerItems
       activeBackgroundColor={"#000"}
       activeTintColor={"#fff"}
       iconContainerStyle={styles.icons}
       {...props}
     />
-  </View>
+  </Body>
 );
 const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  },
   icons: {
     width: 30
   }

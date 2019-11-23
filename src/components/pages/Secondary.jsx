@@ -1,8 +1,9 @@
 import React from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
+import { Text, Button, StyleSheet } from "react-native";
+import Body from "../Body";
 
 const Secondary = props => (
-  <View style={styles.container}>
+  <Body style={styles.container}>
     <Text>Secondary Page</Text>
     <Button
       title="Back"
@@ -10,12 +11,11 @@ const Secondary = props => (
         props.navigation.navigate("Main");
       }}
     />
-  </View>
+  </Body>
 );
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: "yellow",
     alignItems: "center",
     justifyContent: "center"

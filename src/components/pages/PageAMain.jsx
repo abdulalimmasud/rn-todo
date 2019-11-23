@@ -1,18 +1,18 @@
 import React from "react";
-import { View, Button, StyleSheet } from "react-native";
+import { Button, StyleSheet } from "react-native";
+import Body from "../Body";
 
 const PageAMain = props => (
-  <View style={styles.container}>
+  <Body style={styles.container}>
     <Button
       title="To Secondary"
       onPress={() => props.navigation.navigate("Secondary")}
     />
-  </View>
+  </Body>
 );
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: "purple"
   }
 });

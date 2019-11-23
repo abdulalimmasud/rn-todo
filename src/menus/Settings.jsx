@@ -1,15 +1,15 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import Header from "../components/Header";
+import Body from "../components/Body";
 
 const Settings = props => (
-  <View style={styles.container}>
+  <Body style={styles.container}>
     <Header navigation={props.navigation} />
-  </View>
+  </Body>
 );
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: "red"
   }
 });

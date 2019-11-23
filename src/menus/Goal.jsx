@@ -3,6 +3,7 @@ import { StyleSheet, View, Button, FlatList } from "react-native";
 import GoalItem from "../components/goal/GoalItem";
 import GoalInput from "../components/goal/GoalInput";
 import Header from "../components/Header";
+import Body from "../components/Body";
 
 const Goal = props => {
   const [courseGoals, setCourseGoals] = useState([]);
@@ -28,7 +29,7 @@ const Goal = props => {
   };
 
   return (
-    <View style={styles.screen}>
+    <Body>
       <Header navigation={props.navigation} />
       <View style={styles.container}>
         <Button title="Add New Goal" onPress={() => setIsAddMode(true)} />
@@ -49,14 +50,11 @@ const Goal = props => {
           )}
         ></FlatList>
       </View>
-    </View>
+    </Body>
   );
 };
 
 const styles = StyleSheet.create({
-  screen: {
-    flex: 1
-  },
   container: {
     padding: 50
   }

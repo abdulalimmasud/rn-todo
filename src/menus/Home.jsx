@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import { View } from "react-native";
 import Header from "../components/Header";
 import CustomTabNavigator from "../components/CustomTabNavigator";
+import Body from "../components/Body";
 
 class Home extends Component {
   static router = CustomTabNavigator.router;
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <Body>
         <Header navigation={this.props.navigation} />
         <CustomTabNavigator navigation={this.props.navigation} />
-      </View>
+      </Body>
     );
   }
 }

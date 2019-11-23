@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { StyleSheet, View } from "react-native";
 import TitleHeader from "../components/common/TitleHeader";
 import StartGameScreen from "../components/game/StartGameScreen";
 import GameScreen from "../components/game/GameScreen";
 import GameOverScreen from "../components/game/GameOverScreen";
 import Header from "../components/Header";
+import Body from "../components/Body";
 
 const Game = props => {
   const [userNumber, setUserNumber] = useState();
@@ -36,17 +36,12 @@ const Game = props => {
   }
 
   return (
-    <View style={styles.screen}>
+    <Body>
       <Header navigation={props.navigation} />
       <TitleHeader title="Guess a Number" />
       {content}
-    </View>
+    </Body>
   );
 };
 
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1
-  }
-});
 export default Game;

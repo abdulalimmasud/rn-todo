@@ -1,15 +1,15 @@
 import React from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
+import { Text, StyleSheet } from "react-native";
+import Body from "../Body";
 
 const PageB = props => (
-  <View style={styles.container}>
+  <Body style={styles.container}>
     <Text>Page B</Text>
-  </View>
+  </Body>
 );
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: "green",
     alignItems: "center",
     justifyContent: "center"
