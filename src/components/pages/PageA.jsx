@@ -1,6 +1,7 @@
 import { createStackNavigator } from "react-navigation-stack";
 import PageAMain from "./PageAMain";
 import Secondary from "./Secondary";
+import Profile from "./Profile";
 
 const PageANavigator = createStackNavigator({
   Main: {
@@ -14,6 +15,11 @@ const PageANavigator = createStackNavigator({
       header: null
     },
     screen: Secondary
+  },
+  Profile: {
+    navigationOptions: { header: null },
+    path: "people/:name",
+    screen: Profile
   }
 });
 

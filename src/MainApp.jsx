@@ -59,7 +59,8 @@ const MainNavigator = createDrawerNavigator(
   },
   {
     contentComponent: CustomDrawerNavigator,
-    style: { marginTop: 20, fontSize: 20 }
+    style: { marginTop: 20, fontSize: 20 },
+    initialRouteName: "Home"
   }
 );
 

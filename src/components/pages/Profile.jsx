@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 import Body from "../Body";
 
-const PageAMain = props => (
+const Profile = props => (
   <Body style={styles.container}>
     <Button
       title="To Secondary"
@@ -10,11 +10,9 @@ const PageAMain = props => (
     />
     <View style={styles.txtContainer}>
       <Text style={styles.txt}>Hello Mr.</Text>
-      <Text style={{ ...styles.txt, color: "#fff" }}>Welcome</Text>
-      <Button
-        title="Profile"
-        onPress={() => props.navigation.navigate("Profile", { name: "Masud" })}
-      />
+      <Text style={{ ...styles.txt, color: "#fff" }}>
+        {props.navigation.state.params.name}
+      </Text>
     </View>
   </Body>
 );
@@ -34,4 +32,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default PageAMain;
+export default Profile;

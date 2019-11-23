@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import Header from "../components/Header";
 import Body from "../components/Body";
+import Colors from "../components/utils/colors";
 
 const About = props => (
   <Body style={styles.container}>
@@ -10,7 +11,7 @@ const About = props => (
 );
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "blue"
+    backgroundColor: Colors.primary
   }
 });
 export default About;
