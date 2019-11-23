@@ -58,7 +58,8 @@ const MainNavigator = createDrawerNavigator(
     }
   },
   {
-    contentComponent: CustomDrawerNavigator
+    contentComponent: CustomDrawerNavigator,
+    style: { marginTop: 20, fontSize: 20 }
   }
 );
 

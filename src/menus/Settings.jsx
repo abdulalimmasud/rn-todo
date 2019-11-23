@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import Header from "../components/Header";
 import Body from "../components/Body";
+import Colors from "../components/utils/colors";
 
 const Settings = props => (
   <Body style={styles.container}>
@@ -10,7 +11,7 @@ const Settings = props => (
 );
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "red"
+    backgroundColor: Colors.pantoneSolidCoated
   }
 });
 export default Settings;
