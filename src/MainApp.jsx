@@ -8,6 +8,7 @@ import Settings from "./menus/Settings";
 import About from "./menus/About";
 import Goal from "./menus/Goal";
 import Game from "./menus/Game";
+import DataList from "./menus/DataList";
 
 const MainNavigator = createDrawerNavigator(
   {
@@ -37,6 +38,15 @@ const MainNavigator = createDrawerNavigator(
         drawerLabel: "Game"
       },
       screen: Game
+    },
+    DataList: {
+      navigationOptions: {
+        drawerIcon: ({ tintColor }) => (
+          <Ionicons name="md-cloud" style={{ color: tintColor }} />
+        ),
+        drawerLabel: "Data"
+      },
+      screen: DataList
     },
     Settings: {
       navigationOptions: {
