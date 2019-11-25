@@ -1,7 +1,8 @@
-import React from "react";
+import * as SecureStore from "expo-secure-store";
 
 const httpHelper = {
   get: async url => {
+    //console.log("mykey", await SecureStore.getItemAsync("@myKey"));
     try {
       const response = await fetch(url);
       const json = await response.json();

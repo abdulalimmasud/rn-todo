@@ -1,9 +1,13 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
 import MainApp from "./src/MainApp";
-// import Header from "./src/components/Header";
+// import AsyncStorage from "@react-native-community/async-storage";
+//import * as SecureStore from "expo-secure-store";
 
 export default function App() {
+  // SecureStore.setItemAsync("@myKey", {
+  //   userId: "1",
+  //   token: "this is my access token"
+  // });
   return (
     <MainApp />
     // <View style={styles.container}>

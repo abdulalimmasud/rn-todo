@@ -1,4 +1,4 @@
-import { Ionicons } from "@expo/vector-icons";
+import { Ionicons, AntDesign } from "@expo/vector-icons";
 import React from "react";
 import { createDrawerNavigator } from "react-navigation-drawer";
 import { createAppContainer } from "react-navigation";
@@ -9,6 +9,7 @@ import About from "./menus/About";
 import Goal from "./menus/Goal";
 import Game from "./menus/Game";
 import DataList from "./menus/DataList";
+import Map from "./menus/Map";
 
 const MainNavigator = createDrawerNavigator(
   {
@@ -20,6 +21,15 @@ const MainNavigator = createDrawerNavigator(
         drawerLabel: "Home"
       },
       screen: Home
+    },
+    Map: {
+      navigationOptions: {
+        drawerIcon: ({ tintColor }) => (
+          <AntDesign name="enviroment" style={{ color: tintColor }} />
+        ),
+        drawerLabel: "Map"
+      },
+      screen: Map
     },
     Goal: {
       navigationOptions: {

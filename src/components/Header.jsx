@@ -18,7 +18,7 @@ const Header = props => {
 const styles = StyleSheet.create({
   container: {
     borderBottomWidth: 2,
-    height: 70,
+    height: 60,
     paddingTop: 20
   }
 });
