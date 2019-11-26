@@ -50,15 +50,15 @@ const MainNavigator = createDrawerNavigator(
       },
       screen: Game
     },
-    Wallet_Box: {
-      navigationOptions: {
-        drawerIcon: ({ tintColor }) => (
-          <Ionicons name="md-wallet" style={{ color: tintColor }} />
-        ),
-        drawerLabel: "Wallet"
-      },
-      screen: Wallet
-    },
+    // Wallet_Box: {
+    //   navigationOptions: {
+    //     drawerIcon: ({ tintColor }) => (
+    //       <Ionicons name="md-wallet" style={{ color: tintColor }} />
+    //     ),
+    //     drawerLabel: "Wallet"
+    //   },
+    //   screen: Wallet
+    // },
     DataList: {
       navigationOptions: {
         drawerIcon: ({ tintColor }) => (
