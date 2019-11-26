@@ -47,6 +47,7 @@ class SimpleMap extends Component {
         style={styles.container}
         region={this.state.region}
         showsUserLocation={true}
+        showsTraffic={true}
         onRegionChange={region => {
           this.setState({ region });
         }}

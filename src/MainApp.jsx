@@ -10,6 +10,7 @@ import Goal from "./menus/Goal";
 import Game from "./menus/Game";
 import DataList from "./menus/DataList";
 import Map from "./menus/Map";
+import Wallet from "./menus/Wallet";
 
 const MainNavigator = createDrawerNavigator(
   {
@@ -48,6 +49,15 @@ const MainNavigator = createDrawerNavigator(
         drawerLabel: "Game"
       },
       screen: Game
+    },
+    Wallet_Box: {
+      navigationOptions: {
+        drawerIcon: ({ tintColor }) => (
+          <Ionicons name="md-wallet" style={{ color: tintColor }} />
+        ),
+        drawerLabel: "Wallet"
+      },
+      screen: Wallet
     },
     DataList: {
       navigationOptions: {
